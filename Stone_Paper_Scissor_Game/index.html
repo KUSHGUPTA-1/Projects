@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stone Paper Scissors</title>
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>Stone Paper Scissors</h1>
+    <div class="choices">
+      <button onclick="play('stone')">🪨 Stone</button>
+      <button onclick="play('paper')">📄 Paper</button>
+      <button onclick="play('scissors')">✂️ Scissors</button>
+    </div>
+    <div class="result">
+      <p id="player-choice"><strong>Your Choice: </strong></p>
+      <p id="computer-choice"><strong>Computer's Choice: </strong></p>
+      <p id="winner"><strong>Result: </strong></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
