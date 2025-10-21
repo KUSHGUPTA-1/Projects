@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #a1ffce, #faffd1);
+
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);  /*fr stands for fractional unit.Each column should take an even ammount of space.*/
+    gap:10px;
+    padding:25px;
+}
+
+#calculator{
+    font-family: Arial,sans-serif;
+    background-color: hsl(0,0%,10%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#display{
+    width: 500px;
+    padding: 20px;
+    font-size: 80px;
+    text-align: left;
+    border: none;
+    background-color: hsl(0,0%,20%);
+    color: limegreen;
+}
+
+button{
+    width:100px;
+    height:100px;
+    border-radius: 50px;
+    border:none;
+    /* background-color: rgba(0, 0, 0, 0.70); */
+    background-color: cyan;
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    /* background-color: hsl(0,0%,40%); */
+    background-color: blueviolet
+}
+button:active{
+    background-color: white;
+}
+
+.operator-btn{
+    background-color: orange;
+}
+.operator-btn:hover{
+    background-color: hsl(35,100%,65%);
+}
+.operator-btn:active{
+    background-color: hsl(35,100%,75%);
+}
